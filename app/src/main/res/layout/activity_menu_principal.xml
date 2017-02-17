@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meno_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="br.com.vitorpanizza.menuprincipal.MenoPrincipalActivity">
+
+    <include layout="@layout/header_main_menu"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/btPlay"
+            android:background="@drawable/botao_customizado"
+            android:layout_marginBottom="16dp"
+            android:textSize="24dp"
+            android:onClick="play"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:id="@+id/btSair"
+            android:layout_below="@+id/btPlay"
+            android:background="@drawable/botao_customizado"
+            android:textSize="24dp"
+            android:onClick="sair"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/footer_main_menu"/>
+
+</RelativeLayout>
